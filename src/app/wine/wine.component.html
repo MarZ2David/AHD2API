@@ -1,0 +1,13 @@
+<section>
+  @for (Wine of cocteles; track $index) {
+    <hr>
+    <h2>{{Wine.strDrink}}</h2>
+    <h3>Categoria: {{Wine.strCategory}}</h3>
+    <p><span>Instruccioner</span>{{Wine.strInstructions}}</p>
+    <h4>Ingredientes</h4>
+    <li>{{Wine.strIngredient1}}</li>
+    <li>{{Wine.strIngredient2}}</li>
+    <li>{{Wine.strIngredient3}}</li>
+    <img [src]="Wine.strDrinkThumb">
+  }
+</section>
